@@ -1,3 +1,20 @@
+# What will this app do?
+We're making a super simple "blog". No users/authentication or anything (yet).
+
+## MVC (model view controller)
+
+We needs to have CRUD operations (create, read, update, delete) for the following types of data:
+1. Posts
+  - title
+  - body
+  - likes (number)
+  - comments (a post can have many comments)
+2. Comments
+  - post (a comment exists on ONLY one post)
+  - body
+  - likes
+
+
 # Install
 
 ## System Dependencies
@@ -16,3 +33,19 @@ rails db:create
 # run the initial migrations
 rails db:migrate
 ```
+
+# Check out what I've already done!
+
+after installing, you'll need to run your local serve
+
+```
+rails s
+```
+
+you can now navigate to `http://localhost:3000/posts` to see what posts exist in the database already.
+There will be NONE!! you'll have to POST data to `http://localhost:3000/posts` in order to create some data.
+
+
+# Create your first MVC!
+I've already created the Posts model and controller. Check out how this works by running 
+
